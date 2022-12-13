@@ -1,7 +1,10 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8" />
-    <title>I'm out in space ~ 3D orbit & random number particle creator to generate space debris/stars</title>
+    <title>
+      I'm out in space ~ 3D orbit & random number particle creator to generate
+      space debris/stars
+    </title>
     <style>
       html,
       body {
@@ -135,15 +138,9 @@
 
       (async function () {
         let textures = {
-          bump: await new TextureLoader().loadAsync(
-            'images/earthbump.jpg'
-          ),
-          map: await new TextureLoader().loadAsync(
-            'images/earthjan.jpg'
-          ),
-          spec: await new TextureLoader().loadAsync(
-            'images/earthspec.jpg'
-          ),
+          bump: await new TextureLoader().loadAsync('images/earthbump.jpg'),
+          map: await new TextureLoader().loadAsync('images/earthjan.jpg'),
+          spec: await new TextureLoader().loadAsync('images/earthspec.jpg'),
         };
 
         let sphere = new Mesh(
@@ -173,12 +170,23 @@
   <body>
     <div class="sun-background">
       <div class="container">
-        <h2 style="color: #fff; position: absolute; left: 20%; bottom: 7%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; opacity: 40%;">3D orbit & using random number method to automatically generate particles (1,600) to render them in a relatively normal-distributed way.<br>
-             Created with Three.js library.  High-res earth image by NASA.
+        <h2
+          style="
+            color: #fff;
+            position: absolute;
+            left: 20%;
+            bottom: 7%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            opacity: 40%;
+          "
+        >
+          3D orbit & using random number method to automatically generate
+          particles (1,600) to render them in a relatively normal-distributed
+          way.<br />
+          Created with Three.js library. High-res earth image by NASA.
+          <img src="earthbump.jpg" />
         </h2>
       </div>
     </div>
-
-    
   </body>
 </html>
